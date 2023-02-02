@@ -1,0 +1,9 @@
+{
+    "1" : ["neutrophil", [0  ,   0,   0]],
+    "2" : ["epithelial", [0,   255,   0]],
+    "3" : ["lymphocyte", [255  , 255,   0]],
+    "4" : ["plasma", [255  , 0, 0]],
+    "5" : ["eosinophil", [0, 0, 255]],
+    "6" : ["connectivetissue", [255, 0, 255]],
+    "0" : ["Background", [255, 255, 255]]
+}
