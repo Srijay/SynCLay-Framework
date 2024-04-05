@@ -1,6 +1,12 @@
-# Scene-Graph-Nuclei
+# SynCLay: Interactive synthesis of histology images from bespoke cellular layouts
 
-All code is developed and tested on Windows 10 with Python 3.6 and PyTorch 1.10
+![training_gcn](https://github.com/Srijay/SynCLay-Framework/assets/6882352/268b3cfb-6cea-4311-8a34-3e83eef74000)
+![thecot_generated](https://github.com/Srijay/SynCLay-Framework/assets/6882352/d92065a0-308b-4b50-aeda-b09f9e15c430)
+
+<a href="#cite-this-repository"><img src="https://img.shields.io/badge/Cite%20this%20repository-BibTeX-brightgreen" alt="DOI"></a> <a href="https://doi.org/10.1016/j.media.2023.102995"><img src="https://img.shields.io/badge/DOI-10.1038%2Fs43856--022--00186--5-blue" alt="DOI"></a>
+<br>
+
+This repository contains the official implementation of https://www.sciencedirect.com/science/article/pii/S1361841523002554. Please follow the instructions given below to setup the environment and execute the code. The code is developed and tested on Windows 10 with Python 3.6 and PyTorch 1.10
 
 # Collect Masks
 
@@ -25,4 +31,25 @@ run python main.py --mode thecot
 # Interactive Demo
 
 ![interactive_demo](https://github.com/Srijay/SynCLay-Framework/assets/6882352/ab5847ac-c93e-4953-8587-58ee4c8e93cb)
+
+
+### Cite this repository
+
+If you find SynCLay useful or use it in your research, please consider citing our paper:
+
+```
+@article{Deshpande2024,
+  title = {SynCLay: Interactive synthesis of histology images from bespoke cellular layouts},
+  volume = {91},
+  ISSN = {1361-8415},
+  url = {http://dx.doi.org/10.1016/j.media.2023.102995},
+  DOI = {10.1016/j.media.2023.102995},
+  journal = {Medical Image Analysis},
+  publisher = {Elsevier BV},
+  author = {Deshpande,  Srijay and Dawood,  Muhammad and Minhas,  Fayyaz and Rajpoot,  Nasir},
+  year = {2024},
+  month = jan,
+  pages = {102995}
+}
+```
 
