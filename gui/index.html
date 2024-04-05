@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3/dist/interact.min.js"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+            href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DEMO</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+                class="fa fa-search"></i></a>
+    </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<h1> INTERACTIVE TISSUE IMAGE GENERATION </h1>
+<h2>Srijay Deshpande, Fayyaz Minhas, Nasir Rajpoot </h2>
+
+<br>
+
+<div class="slidecontainer">
+    <img src="nucleicolors.jpg" alt="Italian Trulli">
+</div>
+
+<br>
+
+<div class="container">
+
+        <div class="nav">
+            <ul>
+                <li>Add-Cells
+                    <ul class="drop-menu menu-2">
+                        <li>Neutrophil</li>
+                        <li>Epithelial</li>
+                        <li>Lymphocyte</li>
+                        <li>Plasma</li>
+                        <li>Eosinophil</li>
+                        <li>ConnectiveTissue</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li> Import Graph
+                    <ul class="drop-menu menu-2">
+                        <li> <input class="favorite styled" type="button" onclick="drawBenignTissueImage()" class="button" value="Benign"> </li>
+                        <li> <input class="favorite styled" type="button" onclick="drawMalignantTissueImage()" class="button" value="Malignant"> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+</div>
+
+
+<div class="containerMain">
+
+    <div class="main">
+
+        <div class="main-movable">
+            <div id="resize-container" style="float:left;margin-right:40px">
+
+            </div>
+        </div>
+
+        <div>
+            <img id="graph_pred" style="float:right;margin-left:30px" src="https://via.placeholder.com/512?text=Nuclei%20Graph"/>
+        </div>
+
+    </div>
+
+    <div class="main_image">
+
+        <div>
+            <img id="layout_pred" style="float:left;margin-right:30px" src="https://via.placeholder.com/512?text=Nuclei%20Mask"/>
+        </div>
+
+        <div>
+            <img id="img_pred" style="float:left;margin-right:40px" src="https://via.placeholder.com/512?text=Generated%20Image"/>
+        </div>
+
+    </div>
+
+    <br>
+
+</div>
+
+</body>
+</html>
